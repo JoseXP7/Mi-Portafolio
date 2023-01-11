@@ -10,5 +10,6 @@ function navScroll() {
 		navigation.classList.add("sticky")
 	} else {
 		navigation.classList.remove("sticky")
+		document.getElementById("navbar").style.position = "fixed"
 	}
 }
