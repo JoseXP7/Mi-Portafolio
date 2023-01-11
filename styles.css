@@ -372,7 +372,7 @@ nav {
   }
   .title-container {
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 0;
     flex-direction: column;
     background: var(--background-one);
   }
@@ -387,6 +387,7 @@ nav {
     background-size: 120%;
     background-repeat: no-repeat;
     object-fit: cover;
+    padding: 0 0 0 0;
   }
   .title .show-form {
     margin: 1em 0 6em 0;
