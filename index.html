@@ -8,7 +8,7 @@
     <title>Jose Dev</title>
   </head>
   <body>
-    <nav> <!--Barra de navegacion -->
+    <nav id="navbar"> <!--Barra de navegacion -->
       <img src="images/menu_icon.svg" alt="menu" class="menu">
       <div class="nav-left">
         <img src="images/logo.png" alt="logo">
@@ -16,12 +16,11 @@
       <div class="nav-right">
         <ul>
           <li><a href="#">Home</a></li>
+          <li><a href="#">About me</a></li>
           <li><a href="#">Projects</a></li>
-          <li><a href="#">Certificados</a></li>
-          <li><a href="#">About</a></li>
-          <li class="nav-button">
+          <!--<li class="nav-button">
           <button class="contact-button">Contact me</button>
-        </li>
+        </li>-->
         </ul>
       </div>
     </nav>
@@ -29,7 +28,8 @@
     <section class="title-container"> <!--Titulo -->
       <div class="title">
 			<h1>Hola! soy José</h1>
-			<p>y soy <span>Frontend Developer</span></p>
+			<p>y soy <span>Front-end Developer</span></p>
+			<button class="show-form">Contactame</button>
 			</div>
       <div class="title-img">
         <img src="images/MyLogoWDwhite.png" alt="Developer">
@@ -59,16 +59,9 @@
 
     <section class="certificates"> <!--Certificados -->
       <div class="info-certificate">
-        <h3>Certificados</h3>
-        <p>conseguidos con tiempo y esfuerzo</p>
-      </div>
-      <div class="captures">
-        <div class="card-capture">
-          <figure><img src="images/course1.png" alt="Platzi"></figure>
-        </div>
-        <div class="card-capture">
-          <figure><img src="images/course1.png" alt="Telefonica"></figure>
-        </div>
+        <h3>Sobre mi...</h3>
+        <p>Soy José Manuel Graterol Rodriguez, y provengo de <span>Venezuela</span>, soy desarrollador web Front-End Junior, cada día me dedico a aprender más sobre ello, ¿interesante no? ademas actualmente llevo a cabo 
+        mis estudios en la Universidad Centroccidental Lisandro Alvarado, ¡presiona el boton para saber más!</p>
       </div>
       <div class="button-more">
         <button>See more</button>
@@ -115,29 +108,13 @@
             <img src="http://placekitten.com/400/400" alt="Card image">
           </figure>
         </div>
-        <div class="project-card">
-          <p>Calculadora</p>
-          <figure>
-            <img src="http://placekitten.com/400/400" alt="Card image">
-          </figure>
-        </div>
-        <div class="project-card">
-          <p>Reloj</p>
-          <figure>
-            <img src="http://placekitten.com/400/400" alt="Card image">
-          </figure>
-        </div>
-        <div class="project-card">
-          <p>Juego Mokepon</p>
-          <figure>
-            <img src="http://placekitten.com/400/400" alt="Card image">
-          </figure>
-        </div>
+
       </div>
     </article>
 
     <footer class="pie-pagina"> <!--Pie de Pagina -->
       <p>Copyright © 2022</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
