@@ -223,7 +223,21 @@ nav {
   margin-top: 0;
 }
 .button-more {
-  margin: 0 3em 0 0
+  margin: 0 3em 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.button-more .img-box {
+  width: 256px;
+}
+.button-more figure {
+  border-radius: 50%;
+}
+.button-more figure img {
+  border-radius: 50%;
+  width: 100%;
 }
 .button-more button {
   background-color: var(--buttons);
@@ -387,7 +401,8 @@ nav {
     background-size: 120%;
     background-repeat: no-repeat;
     object-fit: cover;
-    padding: 0 0 0 0;
+    padding: 0;
+    align-items: center;
   }
   .title .show-form {
     margin: 1em 0 6em 0;
@@ -403,13 +418,19 @@ nav {
   }
   .certificates {
     flex-direction: column;
-    gap: 16px;
+    height: 800px;  
+  }
+  .button-more {
+    margin: 1em 0 2em 0;
   }
   .certificates .info-certificate {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
     align-items: center;
     width: 100%;
     padding: 0 3em
+  }
+  .info-certificate p {
+    width: 70%;
   }
   .certificates .captures .card-capture:nth-child(2) {
     display: none;
