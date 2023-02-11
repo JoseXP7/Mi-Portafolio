@@ -65,13 +65,29 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 168px 0 4em;
+  gap: 3em;
+  padding: 0 168px 0 0;
+  background: url(images/title-background.jpg);
+  background-size: 50%;
+  background-position: right;
+  background-repeat: no-repeat;
+  box-shadow: 0px -1px 5px 1px var(--black) inset;
 }
 .title {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
   color: var(--white);
   font-size: 54px;
+  background: var(--background-one);
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+  padding: 0 1em;
+  box-shadow: 0px -1px 5px 1px var(--black) inset;
+}
+.title h1, p {
   animation: fadeIn;
-  animation-duration: 2s
+  animation-duration: 2s;
 }
 .title p span {
   background: linear-gradient(19deg,#00e9ff 10%, #c7ebff 70%);
@@ -85,7 +101,7 @@ nav {
   margin-top: 0;
 }
 .title-img img {
-  width: 400px;
+  width: 300px;
 }
 /*Informacion de experiencia*/
 .info {
