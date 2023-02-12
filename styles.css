@@ -67,6 +67,7 @@ nav .menu {
 	width: 300px;
 	height: 100vh;
 	z-index: 40;
+	box-shadow: 0px 0px 10px 0px rgba(255,15,243,0.75);
 }
 #mobile-container figure {
 	width: 48px;
@@ -100,7 +101,7 @@ nav .menu {
 	padding: 0 0 0 1em;
 	text-decoration: none;
 	color: var(--light-nav);
-	width: 100%;
+	width: 90%;
 }
 #mobile-links li:hover {
 	background: #454545

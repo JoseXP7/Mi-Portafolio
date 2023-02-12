@@ -23,8 +23,16 @@ closeMenu.addEventListener("click", closeMobileMenu)
 
 function mobileMenu() {
 	mobileNav.style.display = "block"
+	mobileNav.style.animation = "slideInLeft"
+	mobileNav.style.animationDuration = "0.5s"
 }
 
 function closeMobileMenu() {
-	mobileNav.style.display = "none"
+	mobileNav.style.animation = "slideOutLeft"
+	mobileNav.style.animationDuration = "0.5s"
+	setTimeout(function(){
+		mobileNav.style.display = "none"
+	}, 500)
+		
+	
 }
