@@ -116,7 +116,7 @@ nav {
 }
 .title p span {
   background: linear-gradient(19deg,#00e9ff 10%, #c7ebff 70%);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 .title h1 {

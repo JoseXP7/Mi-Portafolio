@@ -14,7 +14,7 @@ function navScroll() {
 	}
 }
 
-let mobileMenu = document.getElementById("menu")
+let mobileNav = document.getElementById("menu")
 
 function mobileMenu() {
 	let links = document.getElementById("mobile-nav")
