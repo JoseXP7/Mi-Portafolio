@@ -54,7 +54,19 @@ nav {
 .nav-right a:hover {
   color: #C989DB
 }
-
+.nav-right .mobile-nav {
+  display: none;
+}
+.mobile-nav-active {
+  display: block;
+  width: 100%;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 10px;
+  color: var(--white);
+  position: sticky;
+}
 /*.nav-right .nav-button .contact-button {
   background-color: var(--buttons);
   border: none;
@@ -368,7 +380,7 @@ nav {
   text-align: center;
   color: var(--white);
 }
-@media (max-width:640px) {
+@media (max-width:768px) {
   .menu {
     display: block;
   }

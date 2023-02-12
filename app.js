@@ -13,3 +13,11 @@ function navScroll() {
 		document.getElementById("navbar").style.position = "fixed"
 	}
 }
+
+let mobileMenu = document.getElementById("menu")
+
+function mobileMenu() {
+	let links = document.getElementById("mobile-nav")
+	
+	links.classList.add = "mobile-nav-active"
+}
