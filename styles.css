@@ -372,16 +372,7 @@ nav {
   .menu {
     display: block;
   }
-  .nav-right ul li:nth-child(1) {
-    display: none;
-  }
-  .nav-right ul li:nth-child(2) {
-    display: none;
-  }
-  .nav-right ul li:nth-child(3) {
-    display: none;
-  }
-  .nav-right ul li:nth-child(4) {
+  .nav-right ul li {
     display: none;
   }
   .title-container {
@@ -424,6 +415,7 @@ nav {
     margin: 1em 0 2em 0;
   }
   .certificates .info-certificate {
+    background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
     align-items: center;
     width: 100%;
