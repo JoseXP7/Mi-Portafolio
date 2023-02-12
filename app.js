@@ -14,10 +14,17 @@ function navScroll() {
 	}
 }
 
-let mobileNav = document.getElementById("menu")
+let iconMenu = document.getElementById("menu")
+let closeMenu = document.getElementById("close-menu")
+let mobileNav = document.getElementById("mobile-container")
+
+iconMenu.addEventListener("click", mobileMenu)
+closeMenu.addEventListener("click", closeMobileMenu)
 
 function mobileMenu() {
-	let links = document.getElementById("mobile-nav")
-	
-	links.classList.add = "mobile-nav-active"
+	mobileNav.style.display = "block"
+}
+
+function closeMobileMenu() {
+	mobileNav.style.display = "none"
 }

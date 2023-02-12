@@ -31,6 +31,10 @@ nav {
   box-shadow: 0px -1px 5px 1px var(--black);
   z-index: 33
 }
+nav .menu {
+	width: 32px;
+	cursor: pointer;
+}
 .nav-left {
   display: flex;
 }
@@ -54,18 +58,55 @@ nav {
 .nav-right a:hover {
   color: #C989DB
 }
-.nav-right .mobile-nav {
-  display: none;
+#mobile-container {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--background-two);
+	width: 300px;
+	height: 100vh;
+	z-index: 40;
 }
-.mobile-nav-active {
-  display: block;
-  width: 100%;
-  background: red;
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 0 10px;
-  color: var(--white);
-  position: sticky;
+#mobile-container figure {
+	width: 48px;
+	height: 48px;
+	margin: 0;
+	padding: 0;
+	background: var(--background-one);
+	cursor: pointer
+}
+#mobile-container img {
+	padding: 6px
+}
+#mobile-links {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	/*padding: 1em 0 0 1em;*/
+	position: absolute;
+	list-style: none;
+	font-size: 2rem;
+	width: 100%;
+}
+#mobile-links li {
+	padding: 5px;
+	background: var(--background-three);
+	border-bottom: 1px solid #4E4E4E
+}
+#mobile-links a {
+	display: inline-block;
+	padding: 0 0 0 1em;
+	text-decoration: none;
+	color: var(--light-nav);
+	width: 100%;
+}
+#mobile-links li:hover {
+	background: #454545
+}
+#mobile-links a:hover {
+	color: #C989DB
 }
 /*.nav-right .nav-button .contact-button {
   background-color: var(--buttons);
