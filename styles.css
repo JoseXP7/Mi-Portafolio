@@ -131,10 +131,9 @@ nav .menu {
   gap: 3em;
   padding: 0 168px 0 0;
   background: url(images/title-background.jpg);
-  background-size: 50%;
-  background-position: right;
+  background-size: cover;
+  background-position: 20em;
   background-repeat: no-repeat;
-  object-fit: cover;
   box-shadow: 0px -1px 5px 1px var(--black) inset;
 }
 .title {
@@ -394,20 +393,67 @@ nav .menu {
   text-align: center;
 }
 .projects-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   gap: 6em;
   margin: 1em 0 4em 0;
 }
-.project-card {
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden; /* <===  */
+  border-radius: 15px;
+}
+
+.slide {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: var(--buttons);
+  color: var(--white)
+  font-size: 18px;
+}
+.btn:active {
+  transform: scale(1.1);
+}
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+/*.project-card {
   background: var(--card);
   border-radius: 8px;
   text-align: center;
 }
 .projects-container img {
   width: 100px;
-}
+}*/
 
 /*Pie de Pagina*/
 .pie-pagina {
