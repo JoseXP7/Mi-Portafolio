@@ -21,9 +21,11 @@ function navScroll() {
 let iconMenu = document.getElementById("menu")
 let closeMenu = document.getElementById("close-menu")
 let mobileNav = document.getElementById("mobile-container")
+let mobileLinks = document.getElementById("mobile-links")
 
 iconMenu.addEventListener("click", mobileMenu)
 closeMenu.addEventListener("click", closeMobileMenu)
+mobileLinks.addEventListener("click", closeMobileMenu)
 
 function mobileMenu() {
 	mobileNav.style.display = "block"

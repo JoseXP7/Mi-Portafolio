@@ -12,6 +12,9 @@
   --md: 16px;
   --lg: 18px;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
@@ -182,7 +185,8 @@ nav .menu {
   background: #D895FF;
 }
 .title .show-form:active {
-  background: #7600DA
+  background: #7600DA;
+  transform: scale(1.1);
 }
 @keyframes button-blur {
   from {
@@ -302,6 +306,10 @@ nav .menu {
   width: 156px;
   padding: 1em;
   animation: shadow-pulse 3s infinite;
+  cursor: pointer
+}
+.button-more button:active {
+	transform: scale(1.1);
 }
 @keyframes shadow-pulse {
   0% {
